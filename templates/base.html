@@ -1,0 +1,138 @@
+<nav class="navbar bg-body-tertiary" aria-label="Light offcanvas navbar">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/nicepage.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/Главная.css') }}">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i|Alegreya+Sans+SC:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{{ url_for('index') }}">Ручка и два шарика</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarLight" aria-controls="offcanvasNavbarLight" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarLight" aria-labelledby="offcanvasNavbarLightLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{ url_for('index') }}">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('show_articles') }}">Ассортимент</a>
+                    </li>
+                    <li class="nav-item" style="margin-bottom: 20px;">
+                        <a class="nav-link" href="{{ url_for('about') }}">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        {% if current_user.is_authenticated %}
+                        <a class="btn custom-btn me-2" href="{{ url_for('logout') }}">Выход</a>
+                        {% else %}
+                        <!-- Login Button -->
+                        <a class="btn custom-btn me-2" href="{{ url_for('login') }}">Войти</a>
+                        <!-- Registration Button -->
+                        <a class="btn custom-btn" href="{{ url_for('signup') }}">Регистрация</a>
+                        {% endif %}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+{% block content %}
+{% endblock %}
+<footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-6200"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Тут я ничего не придумала :(</p>
+        <span id="monica-writing-entry-btn-root" class="monica-widget" style="position: absolute; left: 0px; top: 0px; pointer-events: none; z-index: 2147483647;">
+          <div class="_monica-dark">
+            <div style="top: 0px; left: 0px; position: absolute;">
+              <style> .monica-writing-entry-btn {
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+  pointer-events: all;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  transition: all ease 0.2s;
+  border-radius: 20px;
+  border: 1px solid transparent;
+}
+.monica-writing-clickable-item {
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4px;
+  height: 26px;
+  color: #a0a0a0;
+}
+.monica-writing-clickable-item.monica-writing-first {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.monica-writing-clickable-item.monica-writing-last {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.monica-writing-clickable-item:hover {
+  color: #3872e0;
+}
+.monica-writing-divider {
+  background-color: #eeeeee;
+  min-width: 1px;
+  height: 12px;
+}
+
+.monica-writing-entry-btn:hover {
+  background: #ffffff;
+  border: 1px solid rgba(115, 114, 120, 0.15);
+}
+
+.monica-writing-caret {
+  width: 1.5px;
+  background-color: #3872e0;
+  pointer-events: none;
+  position: absolute;
+  border-radius: 1px;
+}
+.monica-writing-caret-head {
+  background-color: #3872e0;
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  position: absolute;
+  left: -2.25px;
+}
+@media print {
+  .monica-writing-entry-btn {
+    display: none;
+  }
+} </style>
+              <style class="darkreader darkreader--sync" media="screen"></style>
+              <div id="monica-writing-entry-btn-mirror-node" style="box-sizing: border-box; left: 271px; top: 37px; width: 313px; height: 17px; border: 0px none transparent; border-radius: 0px; padding: 0px; margin: 49px 362px; position: absolute; pointer-events: none; overflow: hidden; ">
+                <div id="monica-writing-entry-btn" class="monica-writing-entry-btn" style="display: none; opacity: 1;">
+                  <span class="monica-writing-clickable-item monica-writing-last">
+                    <img src="chrome-extension://ofpnmcalabcbjgholdjcjblkibolbppb/static/writingLogo.png" alt="" style="width: 24px; height: 24px; -webkit-user-drag: none;">
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </span>
+      </div></footer>

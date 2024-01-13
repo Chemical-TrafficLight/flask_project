@@ -1,0 +1,273 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 810px;
+}
+
+.u-section-1 .u-image-1 {
+  min-height: 690px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  height: auto;
+  background-image: url("static/images/still-life-of1.jpg");
+  background-position: 50% 50%;
+  background-size: 120%;
+  --animation-custom_in-translate_x: 0px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 0.3;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 30px 18px;
+}
+
+.u-section-1 .u-text-1 {
+  background-image: none;
+  margin: 113px 451px 0 0;
+}
+
+.u-section-1 .u-text-2 {
+  margin: 20px 12px 0 0;
+}
+
+.u-section-1 .u-text-3 {
+  margin: 30px auto 0 0;
+}
+
+.u-section-1 .u-btn-1 {
+  padding: 0;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-image-1 {
+    height: auto;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-right: 251px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-btn-1 {
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 722px;
+  }
+
+  .u-section-1 .u-image-1 {
+    background-size: auto 120%;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-right: 31px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-right: 0;
+  }
+} .u-section-2 {
+  background-image: none;
+}
+
+.u-section-2 .u-sheet-1 {
+  min-height: 462px;
+}
+
+.u-section-2 .u-text-1 {
+  margin: 31px auto 0;
+}
+
+.u-section-2 .u-list-1 {
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.u-section-2 .u-repeater-1 {
+  grid-auto-columns: calc(33.3333% - 6.66667px);
+  grid-template-columns: repeat(3, calc(33.3333% - 6.66667px));
+  min-height: 332px;
+  grid-gap: 10px;
+}
+
+.u-section-2 .u-container-layout-1 {
+  padding: 10px;
+}
+
+.u-section-2 .u-image-1 {
+  width: 187px;
+  height: 187px;
+  background-image: url("static/images/woman-sewing-manual-skirt_23-2148898077.jpg");
+  background-position: 50% 50%;
+  margin: 46px auto 0;
+}
+
+.u-section-2 .u-text-2 {
+  margin: 30px auto 0;
+}
+
+.u-section-2 .u-container-layout-2 {
+  padding: 10px;
+}
+
+.u-section-2 .u-image-2 {
+  width: 187px;
+  height: 187px;
+  background-image: url("static/images/close-up-hands-painting-pottery-item.jpg");
+  background-position: 50% 50%;
+  margin: 46px auto 0;
+}
+
+.u-section-2 .u-text-3 {
+  margin: 30px auto 0;
+}
+
+.u-section-2 .u-container-layout-3 {
+  padding: 10px;
+}
+
+.u-section-2 .u-image-3 {
+  width: 187px;
+  height: 187px;
+  background-image: url("static/images/creative-artists-at-work-painting-colorful-patterns-generated-by-ai.jpg");
+  background-position: 50% 50%;
+  margin: 46px auto 0;
+}
+
+.u-section-2 .u-text-4 {
+  margin: 30px auto 0;
+}
+
+.u-section-2 .u-container-layout-4 {
+  padding: 10px;
+}
+
+.u-section-2 .u-image-4 {
+  width: 187px;
+  height: 187px;
+  background-image: url("static/images/artistic-woman-painting-in-the-nature_23-2148276440.jpg");
+  background-position: 50% 37.02%;
+  margin: 46px auto 0;
+}
+
+.u-section-2 .u-text-5 {
+  margin: 30px auto 0;
+}
+
+.u-section-2 .u-container-layout-5 {
+  padding: 10px;
+}
+
+.u-section-2 .u-image-5 {
+  width: 187px;
+  height: 187px;
+  background-image: url("static/images/woman-painting-with-watercolors-on-paper_23-2148854577.jpg");
+  background-position: 63.81% 50%;
+  margin: 46px auto 0;
+}
+
+.u-section-2 .u-text-6 {
+  margin: 30px auto 0;
+}
+
+.u-section-2 .u-container-layout-6 {
+  padding: 10px;
+}
+
+.u-section-2 .u-image-6 {
+  width: 187px;
+  height: 187px;
+  background-image: url("static/images/memory-concept-with-sculpture-and-paper-still-life_23-2149320957.jpg");
+  background-position: 50% 64.97%;
+  margin: 46px auto 0;
+}
+
+.u-section-2 .u-text-7 {
+  margin: 30px auto 0;
+}
+
+.u-section-2 .u-container-layout-7 {
+  padding: 10px;
+}
+
+.u-section-2 .u-image-7 {
+  width: 187px;
+  height: 187px;
+  background-image: url("static/images/human-hand-painting-graffiti-with-aerosol-can_23-2147827498.jpg");
+  background-position: 0% 50%;
+  margin: 46px auto 0;
+}
+
+.u-section-2 .u-text-8 {
+  margin: 30px auto 0;
+}
+
+.u-section-2 .u-gallery-nav-1 {
+  position: absolute;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.u-section-2 .u-gallery-nav-2 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: auto;
+  top: 145px;
+  right: 9px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-2 .u-repeater-1 {
+    grid-auto-columns: calc(33.333333333333336% - 6.66667px);
+    grid-template-columns: repeat(3, calc(33.333333333333336% - 6.66667px));
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-2 .u-repeater-1 {
+    grid-auto-columns: calc(50% - 5.0000025px);
+    grid-template-columns: repeat(2, calc(50% - 5.0000025px));
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-2 .u-repeater-1 {
+    grid-auto-columns: calc(100% - 0px);
+    grid-template-columns: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-2 .u-repeater-1 {
+    grid-auto-columns: 100%;
+  }
+}
+
+<style>
+  .custom-btn {
+    background-color: #6c64bd;
+    border-color: #6c64bd;
+    color: #6c64bd;
+  }
+
+  .custom-btn:hover {
+    background-color: #9892f3;
+    border-color: #9892f3;
+  }
+</style>

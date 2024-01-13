@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Shopping Cart</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/bootstrap.min.css') }}"/>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/custom.css') }}"/>
+	</head>
+
+	<body>
+
+
+		<div class="container-fluid breadcrumbBox text-center">
+			<ol class="breadcrumb">
+				<li><a href="{{ url_for('index') }}">Главная</a></li>
+				<li class="active"><a href="#">Заказ</a></li>
+			</ol>
+		</div>
+		
+		<div class="container text-center">
+
+			<div class="col-md-5 col-sm-12">
+				<div class="bigcart"></div>
+				<h1>Your shopping cart</h1>
+				<p>
+					This is a free and <b><a href="http://tutorialzine.com/2014/04/responsive-shopping-cart-layout-twitter-bootstrap-3/" title="Read the article!">responsive shopping cart layout, made by Tutorialzine</a></b>. It looks nice on both desktop and mobile browsers. Try it by resizing your window (or opening it on your smartphone and pc).
+				</p>
+			</div>
+			
+			<div class="col-md-7 col-sm-12 text-left">
+				<ul>
+					<li class="row list-inline columnCaptions">
+						<span>Количество</span>
+						<span>Товар</span>
+						<span>Цена</span>
+					</li>
+					{% for product_id in cart["items"] %}
+					<li class="row">
+						<span class="quantity">{{ cart["items"][product_id]["qty"] }}</span>
+						<span class="itemName">{{ cart["items"][product_id]["item"] }}</span>
+						<span class="price">$ {{ cart["items"][product_id]["price"] }}</span>
+						<a href="{{ url_for('remove_from_cart', product_id = product_id) }}"><span class="glyphicon glyphicon-remove"></span></a>
+					</li>
+					{% endfor %}
+					<li class="row totals">
+						<span class="itemName">Итого:</span>
+						<span class="price">${{ cart["total"] }}</span>
+						<span class="order"> <a class="text-center" href="{{ url_for('make_order') }}">Заказать</a></span>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+		<!-- The popover content -->
+
+
+		
+		<!-- JavaScript includes -->
+
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
+		<script src="{{ url_for('static',filename='scripts/bootstrap.min.js') }}"></script>
+		<script src="{{ url_for('static',filename='scripts/customjs.js') }}"></script>
+
+	</body>
+</html>
